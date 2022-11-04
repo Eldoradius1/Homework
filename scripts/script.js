@@ -17,3 +17,9 @@ btn.addEventListener('click', () => {
 //Second level: ЗАДАЧА 2
 //В index.html в тэге body есть два объекта: кнопка (button) и контейнер (div).
 //При нажатии на кнопку в контейнере создаются желтые квадраты 300х300px. К контейнеру применить свойство grid.
+
+btn.addEventListener('click', () => {
+    const yellow_square = document.createElement('div');
+    yellow_square.classList.add('square');
+    container.append(yellow_square);
+})
